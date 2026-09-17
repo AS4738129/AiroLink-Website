@@ -30,7 +30,7 @@ export default function Contact() {
                 <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-techblue-500/10 text-techblue-500">
                   <MapPin size={20} />
                 </div>
-                <div>
+                <div className="min-w-0">
                   <h3 className="font-display text-sm font-semibold text-navy-900">
                     Location
                   </h3>
@@ -42,7 +42,7 @@ export default function Contact() {
                 <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-techblue-500/10 text-techblue-500">
                   <Clock3 size={20} />
                 </div>
-                <div>
+                <div className="min-w-0">
                   <h3 className="font-display text-sm font-semibold text-navy-900">
                     Availability
                   </h3>

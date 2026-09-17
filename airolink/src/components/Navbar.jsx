@@ -32,7 +32,7 @@ export default function Navbar() {
           : "bg-white/80 backdrop-blur"
       }`}
     >
-      <div className="container-page flex h-20 items-center justify-between">
+      <div className="container-page flex min-w-0 h-20 items-center justify-between">
         <Logo />
 
         <nav className="hidden items-center gap-1 lg:flex" aria-label="Primary">

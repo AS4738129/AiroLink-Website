@@ -13,9 +13,9 @@ export default function MainLayout() {
   }, [location.pathname]);
 
   return (
-    <div className="flex min-h-screen flex-col bg-white">
+    <div className="flex min-h-screen min-w-0 flex-col overflow-x-hidden bg-white">
       <Navbar />
-      <main id="main" className="flex-1">
+      <main id="main" className="min-w-0 flex-1">
         <Outlet />
       </main>
       <Footer />

@@ -9,6 +9,7 @@ html {
 
 body {
   @apply font-body text-ink-900 bg-white antialiased;
+  overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -26,7 +27,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .container-page {
-  @apply mx-auto max-w-8xl px-5 sm:px-8 lg:px-10;
+  @apply mx-auto w-full max-w-8xl px-5 sm:px-8 lg:px-10;
 }
 
 .section-pad {

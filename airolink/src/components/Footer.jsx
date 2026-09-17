@@ -60,18 +60,18 @@ export default function Footer() {
             Contact
           </h3>
           <ul className="mt-4 space-y-3 text-sm">
-            <li className="flex items-start gap-2.5">
+            <li className="flex min-w-0 items-start gap-2.5">
               <MapPin size={16} className="mt-0.5 shrink-0 text-sky-400" />
-              <span>
+              <span className="min-w-0 break-words">
                 {siteInfo.location}
                 <br />
                 <span className="text-white/45">{siteInfo.availability}</span>
               </span>
             </li>
             {siteInfo.phones.map((phone) => (
-              <li key={phone} className="flex items-center gap-2.5">
+              <li key={phone} className="flex min-w-0 items-center gap-2.5">
                 <Phone size={16} className="shrink-0 text-sky-400" />
-                <a href={`tel:${phone}`} className="hover:text-white transition-colors">
+                <a href={`tel:${phone}`} className="min-w-0 break-words hover:text-white transition-colors">
                   {phone}
                 </a>
               </li>
