@@ -17,7 +17,7 @@ export default function MobileMenu({ open, onClose }) {
         onClick={onClose}
       />
       <div
-        className={`absolute right-0 top-0 h-full w-[86%] max-w-sm bg-navy-950 shadow-2xl transition-transform duration-300 ${
+        className={`absolute right-0 top-0 z-10 h-full w-[86%] max-w-sm bg-navy-950 shadow-2xl transition-transform duration-300 ${
           open ? "translate-x-0" : "translate-x-full"
         }`}
         role="dialog"
@@ -34,7 +34,7 @@ export default function MobileMenu({ open, onClose }) {
             <X size={22} />
           </button>
         </div>
-        <nav className="flex flex-col gap-1 px-3 py-4">
+        <nav className="flex flex-col gap-1 bg-navy-950 px-3 py-4">
           {navLinks.map((link) => (
             <NavLink
               key={link.to}
@@ -42,7 +42,7 @@ export default function MobileMenu({ open, onClose }) {
               end={link.to === "/"}
               onClick={onClose}
               className={({ isActive }) =>
-                `rounded-lg px-4 py-3.5 text-base font-medium transition-colors ${
+                `block rounded-lg bg-navy-950 px-4 py-3.5 text-base font-medium transition-colors ${
                   isActive
                     ? "bg-techblue-500 text-white"
                     : "text-white/75 hover:bg-white/5 hover:text-white"
