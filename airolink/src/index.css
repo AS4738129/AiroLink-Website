@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply font-body text-ink-900 bg-white antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply font-display;
+}
+
+::selection {
+  background-color: #1E6FEB;
+  color: white;
+}
+
+:focus-visible {
+  outline: 2px solid #1E6FEB;
+  outline-offset: 2px;
+}
+
+.container-page {
+  @apply mx-auto max-w-8xl px-5 sm:px-8 lg:px-10;
+}
+
+.section-pad {
+  @apply py-16 sm:py-20 lg:py-24;
+}
+
+.eyebrow {
+  @apply inline-flex items-center gap-2 text-xs font-semibold tracking-wide text-techblue-500;
+}
+
+.btn-primary {
+  @apply inline-flex items-center justify-center gap-2 rounded-lg bg-techblue-500 px-6 py-3 text-sm font-semibold text-white shadow-card transition-colors hover:bg-techblue-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-techblue-500;
+}
+
+.btn-secondary {
+  @apply inline-flex items-center justify-center gap-2 rounded-lg border border-navy-700/20 bg-white px-6 py-3 text-sm font-semibold text-navy-900 shadow-sm transition-colors hover:border-techblue-500 hover:text-techblue-500;
+}
+
+.btn-outline-light {
+  @apply inline-flex items-center justify-center gap-2 rounded-lg border border-white/30 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-white/10;
+}
+
+.card-surface {
+  @apply rounded-2xl border border-navy-900/5 bg-white shadow-card;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
