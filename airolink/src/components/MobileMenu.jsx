@@ -11,13 +11,13 @@ export default function MobileMenu({ open, onClose }) {
       aria-hidden={!open}
     >
       <div
-        className={`absolute inset-0 bg-navy-950/60 transition-opacity duration-300 ${
+        className={`absolute inset-0 bg-black/70 transition-opacity duration-300 ${
           open ? "opacity-100" : "opacity-0"
         }`}
         onClick={onClose}
       />
       <div
-        className={`absolute right-0 top-0 h-full w-[86%] max-w-sm bg-navy-900 shadow-panel transition-transform duration-300 ${
+        className={`absolute right-0 top-0 h-full w-[86%] max-w-sm bg-navy-950 shadow-2xl transition-transform duration-300 ${
           open ? "translate-x-0" : "translate-x-full"
         }`}
         role="dialog"
@@ -44,7 +44,7 @@ export default function MobileMenu({ open, onClose }) {
               className={({ isActive }) =>
                 `rounded-lg px-4 py-3.5 text-base font-medium transition-colors ${
                   isActive
-                    ? "bg-white/10 text-white"
+                    ? "bg-techblue-500 text-white"
                     : "text-white/75 hover:bg-white/5 hover:text-white"
                 }`
               }
